@@ -6,13 +6,13 @@
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <!--La etiqueta link que conecta el estilo con el HTML-->
-    <link href="estilo1.css" rel="stylesheet" type="text/css">
+    <link href="/css/estilo1.css" rel="stylesheet" type="text/css">
     <title> Toulouse </title>
     </head>  
 <body> 
 	<header>
         <div class="contenedor">
-            <h3><a href="index.html">Home</a></h3>      
+            <h2><a href="index.html">Home</a></h2>      
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
                 <nav class  ="menu">                
@@ -21,54 +21,99 @@
                 <a href="actividades.html">Actividades</a>
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
-                </nav>        
-                    
+                </nav>     
         </div>  
 	</header>
     
-    <banner>
-        <section class="sec1b">
+    <div id="banner">
+        <section class="sec1b" style="background-image: url(imagenes/b4.jpg)">
             <div class="contenedor">
-                <h1>Toulouse</h1>         
+                <h1>Actividades</h1>         
             </div>    
         </section>
-    </banner>
+    </div>
         
     <section class="sec2">
-        Toulouse es una etapa capital en el Sudoeste de Francia.
-        Antiguamente fue capital visigoda; hoy es una gran capital de la aeronáutica y del espacio. Toulouse invita a todos a descubrir sus dos mil años de historia. Ya sea su basílica románica, o sus discretos palacetes renacentistas con su imponente pórtico, o una fachada con una increíble decoración de tierra cocida, o el murmullo de una fuente o un patio recóndito… Déjese llevar por todos sus barrios que rezuman historia y modernidad.
-        <br><br>
-        <ul>
-            <li>
-                <div class="actividad">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit, neque esse, sed expedita eum repellat quis non totam praesentium dolores necessitatibus soluta a amet qui placeat magni corrupti explicabo animi?
+        <div class="sec2b">
+            <h1><span>¿Qué hacer en Toulouse?</span></h1>
+            <br>
+            <p>Toulouse es una ciudad llena de colorido, con sus fachadas de 
+                ladrillo color rosa, su flor emblemática (la violeta), el azul
+                del glasto, etc. Es un lugar idóneo para unas vacaciones o un 
+                fin de semana con abundantes visitas y paseos. La “Ciudad Rosa”
+                está ubicada en el centro del Sudoeste, entre el Mediterráneo y 
+                el Atlántico y es un  compendio de patrimonio y de manera de vivir.<br>
+                Siguiendo una visita guiada, el pequeño tren turístico o en barco, 
+                su estancia será un placer entre el Garona y el canal du Midi o 
+                entre Saint-Sernin y la Ciudad del Espacio.</p>
+            <br>
+            <div class="actividades">
+                <div class="card2">
+                    <div class="front"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="back">
+                        <h2>Le Capitole- Hotel de Ville</h2>
+                        <p> En el primer piso hay magníficas salas de recepción decoradas con alegorías 
+                            del Amor por Paul Gervais, diez lienzos enormes de Henri Martin, en la Sala 
+                            de los Ilustres con temas que cuentan la historia de Toulouse y 
+                            unos bustos en memoria de los hombres que dejaron su impronta en 
+                            la ciudad.
+                        </p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="actividad">
-                    fdsfdsfsd
+
+                <div class="card2">
+                    <div class="front"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="back">
+                        <h2>Jardin du Grand Rond</h2>
+                        <p> Su segundo nombre es el de parque Boulingrin, lo que recuerda el 
+                            nombre bowling green en inglés, rectángulo de césped donde se juega
+                            con bolas.<br>
+                            También se puede hacer picnic bajo la gran variedad de árboles y 
+                            flores o improvisar un paseo romántico por las avenidas entre las 
+                            estatuas que terminan en el templete frente a una hermosa fuente.
+                        </p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="actividad">
-                    fdsfdsfsd
+            </div>
+            <div class="actividades">
+                <div class="card2">
+                    <div class="front"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="back">
+                        <h2>Cite de l'espace</h2>
+                        <p> Gracias al simulador de camino lunar, el visitante puede entrenarse a andar 
+                            como un astronauta descubriendo su vida a bordo de la Estación 
+                            Espacial Internacional. Venga a vestirse con una escafandra 
+                            subiendo a un módulo lunar. Y los peques, ¡también!
+                        </p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="actividad">
-                    fdsfdsfsd
+                <div class="card2">
+                    <div class="front"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="back">
+                        <h2>Pont - Neuf</h2>
+                        <p> La construcción a partir de 1544 del puente más 
+                            antiguo del Garona fue un tema de importancia nacional.<br>
+                            Hoy podemos apreciar sus ocho ojos grandiosos, de ladrillo 
+                            y sillares de piedra con u os vanos para limitar la presión 
+                            del agua, dispositivo que permitirá al puente el haber 
+                            resistido a los caprichos del río.
+                        </p>
+                    </div>
                 </div>
-            </li>
-            <li>
-                <div class="actividad">
-                    fdsfdsfsd
-                </div>
-            </li>
-        </ul>      
+            </div>
+        </div>
     </section>
 
     </section>
-    <section class="sec5"></section>
+    <section class="sec5" style="background-image: url(imagenes/b4.jpg)"></section>
+    <div class="footer">
+        <p>Diseñado por: Esteban Sierra</p>
+        <p>Información de contacto: 
+            <a href="mailto:anesierrasa@unal.edu.co">
+                anesierrasa@unal.edu.com
+            </a>.
+        </p>
+    </div>
     
 </body>
 </html>   

@@ -10,31 +10,13 @@
 /*  font-family: Abel  */
 @font-face {
     font-family: Abel;
-    src: url('/fonts/Abel/Abel-Regular.ttf');
-}
-
-/*  font-family: Anton  */
-@font-face {
-    font-family: Anton;
-    src: url(/fonts/Anton/Anton-Regular.ttf);
-}
-
-/*  font-family: Josefin  */
-@font-face {
-    font-family: Josefin;
-    src: url('../fonts/Josefin_Sans/JosefinSans-Regular.ttf');
+    src: url('../fonts/Abel/Abel-Regular.ttf');
 }
 
 /*  font-family: Lexend  */
 @font-face {
     font-family: "Lexend";
-    src: url("fonts/Lexend_Deca/LexendDeca-Regular.ttf");
-}
-
-/*  font-family: Livvic  */
-@font-face {
-    font-family: Livvic;
-    src: url('../fonts/Livvic/Livvic-Regular.ttf');
+    src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
 }
 
 
@@ -121,7 +103,7 @@ section{
     display: flex;
     justify-content: center;
     overflow: hidden;
-    background: url(imagenes/bg2.jpg);
+    background: url(../imagenes/bg2.jpg);
     background-attachment:fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -163,8 +145,6 @@ section{
     font-size: 2em;
     line-height: 1.4em;
 }
-
-
 #banner .sec1 .btn{
     margin: 10px;
     background: gray;
@@ -187,7 +167,6 @@ section.sec5{
     height: 65vh;
     position: relative;
     overflow: hidden;
-    background: url(imagenes/bg1.jpeg);
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -212,19 +191,20 @@ section.sec2{
     box-sizing: border-box;
     text-align: justify;
     line-height: 2rem;    
+    justify-content: center;
 }
 .sec2 h1{
     text-align: center;
-    font-size: 48px;
-    max-width: 600px;
+    font-size: 3rem;
+    max-width: 800px;
     position: relative;
     margin: auto;
 }
 .sec2 h1:before{
     content: "";
     display: block;
-    width: 120px;
-    height: 2px;
+    width: 15rem;
+    height: 0.1rem;
     background: #000;
     position: absolute;
     left: 0;
@@ -234,8 +214,8 @@ section.sec2{
 .sec2 h1:after{
     content: "";
     display: block;
-    width: 120px;
-    height: 2px;
+    width: 15rem;
+    height: 0.1rem;
     background: #000;
     position: absolute;
     right: 0;
@@ -274,7 +254,7 @@ section.sec3{
     box-sizing: border-box;
     border-left: 100px solid rgba(237, 94, 124, 1);
     border-bottom: 26rem solid transparent;
-    background: url(imagenes/b4.jpg); 
+    background: url(../imagenes/b4.jpg); 
     background-position: -100px 0px;
 }
 
@@ -285,7 +265,7 @@ section.sec4{
     height: auto;
     flex-wrap: wrap;
 }
-.sec4 .descripcion{
+.descripcion{
     width: 300px;
     text-align: right;
     content: center;
@@ -308,7 +288,6 @@ section.sec4{
     transform: translateY(-15px);
     box-shadow: 0 17px 16px rgba(0,0,0,0.2);
 }
-
 .sec4 .card img{
     width: 300px;
     height: 220px;
@@ -320,11 +299,9 @@ section.sec4{
     text-align: justify;
     height: 12.4rem;
 }
-
 .sec4 .card .subcard2{
     background: blue;
 }
-
 .sec4 .card .subcard3{
     background: rosybrown;
 }
@@ -334,14 +311,19 @@ section.sec4{
 
 
 
-banner .sec1b{
-    height: 300px;
+#banner .sec1b{
+    height: 25rem;
     position: relative;
-    background: linear-gradient(45deg,#8614ce,#ff0057);
     display: flex;
+    color: white;    
+    overflow: hidden;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
     justify-content: center;
 }
-banner .sec1b:before{
+
+#banner .sec1b:before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -349,90 +331,25 @@ banner .sec1b:before{
     width: 100%;
     height: 200px;
     background: white;
-    clip-path: polygon(0% 100%,100% 70%,100% 100%);
+    clip-path: polygon(0% 100%,100% 40%,100% 100%);
 }
 
-banner .sec1b .contenedor{
+#banner .sec1b .contenedor{
     position: absolute;
-    text-align: center;
-    padding-top: 150px;
+    text-align: left;
+    padding-top: 10rem;
+    padding-left: 5%;
 }
 
-ul{
-    position: relative;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    background: rgb(168, 102, 102);
-    margin: 0;
-    padding: 0;
-}
-ul li {
-    list-style: none;
-    position: relative;
-    width: 20%;
-    height: 100%;
-    border-right: 1px solid #000;
-    float: left;
-    box-sizing: border-box;
-    transition: 0.5s;
-    text-align: center;
-    overflow: hidden;
-}
-ul li:nth-child(1){
-    background: url(imagenes/bg1.jpeg);
-    background-size: cover;
-    background-position: left;
-}
-ul li:nth-child(2){
-    background: url(imagenes/bg2.jpg);
-    background-size: cover;
-    background-position: left;
-}
-ul li:nth-child(3){
-    background: url(imagenes/bg3.jpg);
-    background-size: cover;
-    background-position: left;
-}
-ul li:nth-child(4){
-    background: url(imagenes/bg1.jpeg);
-    background-size: cover;
-    background-position: left;
-}
-ul li:nth-child(5){
-    background: url(imagenes/bg2.jpg);
-    background-size: cover;
-    background-position: left;
-}
-ul:hover li{
-    width: 10%;
-}
-ul li:hover{
-    width: 60%;
-}
-ul li .actividad{
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
-    background: rgba(211, 152, 152, 0.6);
-    box-sizing: border-box;
-    color: #fff;
-}
-ul li:hover .actividad{
-    bottom: 0;
-    transition: 0.5s;
-    transition-delay: 0.5s;
+#banner .sec1b .contenedor h1{
+    font-size: 5rem;
 }
 
 
-
-
-
-.sec2 .circle{
+.sec2 .sec2b .circle{
     width: 200px;
     height: 200px;
-    background: url(imagenes/bg3.jpg);
+    background: url(../imagenes/bg3.jpg);
     border-radius: 50%;
     float: left;
     shape-outside: circle();
@@ -440,8 +357,203 @@ ul li:hover .actividad{
 }
 
 
+.footer{
+    background-color: white;
+    width: 100%;
+    height: 5rem;
+    text-align: center;
+    bottom: 0;
+    padding: .5rem;
+}
 
 
+.sec2b h1{
+    line-height: 3rem;
+}
+.sec2 .actividades{
+    display: flex;
+    justify-content: center;
+}
+.sec2 .card2{
+    position: relative;
+    width: 98%;
+    height: 30rem;
+    margin: 25px;
+    margin-bottom: 5rem;
+    transform-style: preserve-3d;
+    transition: transform .4s linear;
+}
+
+.sec2 .front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front img{
+    width: 98%;
+    height: 30rem;
+    
+    border-radius: 20px;
+}
+
+.sec2 .card2:hover{
+    transform: rotateY(180deg);
+}
+
+.sec2 .back{
+    padding: 2rem;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    background:red;
+    transform: rotateY(180deg);
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.sec2 .actividades{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.sec2 .box{
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: flex;
+    position: relative;
+    margin: auto;
+    width: 24rem;
+    height: 24rem;
+    transition: 0.5s;
+    margin: 10px;
+}
+
+.sec2 .box:hover{
+    z-index: 1;
+    transform: scale(1.1);
+    box-shadow: 0 25px 45 rgba(0,0,0,0.5);
+}
+
+.box .imagen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.box .imagen:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: linear-gradient(180deg,rgb(228, 55, 185),rgb(241, 237, 237));
+    mix-blend-mode: multiply;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 18px;
+}
+
+.box:hover .imagen:before{
+    opacity: 1;
+}
+
+.box .imagen img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+.box .lugar{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    color: white;
+}
+
+.box .lugar h2{
+    width: 100%;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    transform: translateY(100px);
+    line-height: 2rem;
+    opacity: 0;    
+}
+
+.box:hover .lugar h2{
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;    
+}
+
+.box .lugar p{
+    transition: 0.5s;
+    transform: translateY(100px);
+    line-height: 1.2rem;
+    opacity: 0;    
+}
+
+.box:hover .lugar p{
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+    opacity: 1;    
+
+}
+
+
+
+
+
+
+
+
+
+
+#banner .referencias{
+    height: 25rem;
+    position: relative;
+    display: flex;
+    color: white;    
+    overflow: hidden;
+    background-attachment:fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+#banner .referencias:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;      
+    background:url("../imagenes/bg2.jpg");
+    border-radius: 0 0 50% 50%/ 0  0 100% 100%;
+    transform: scaleX(1.5);
+}
+
+#banner .referencias .contenedor{
+    position: absolute;
+    text-align: center;
+    padding-top: 13rem;
+    padding-left: 5%;
+}
+
+#banner .referencias .contenedor h1{
+    font-size: 5rem;
+}
 
 @media only screen and (max-width: 800px) { 
     .menu{
@@ -476,17 +588,51 @@ ul li:hover .actividad{
     section.sec2{
         padding: 5rem; 
     }
+    .sec2 .sec2b h1:before{
+        background: transparent;
+    }
+    .sec2 .sec2b h1:after{
+        background: transparent;
+    }
+    .sec2 .sec2b span{
+        background: transparent;
+    }
 
     .sec4 .descripcion{
         padding: 1rem 5rem; 
         text-align: center;
         width: 100%;
     }
+    .sec2 .actividades{
+        flex-wrap: wrap;
+    }
+    .sec2 .descripcion{
+        width: 100%;
+        text-align: justify;
+    }
+    .sec2 .box{
+        width: 100%;
+        margin: auto;
+        padding-left: 0rem;
+        padding-top: 1rem;
+    }
 }
 
+    
 @media only screen and (max-width: 500px) { 
     #menu-bar:checked ~ .menu{
         width: 100%;
         transform: translateX(0%);
+    }
+    #banner .sec1b .contenedor h1{
+        font-size: 4rem;
+    }
+    section.sec2{
+        padding: 3rem; 
+    }
+    .sec2 .card2{
+        width: 22rem;
+        height: 30rem;
+        margin: 8px;
     }
 }

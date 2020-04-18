@@ -6,13 +6,13 @@
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <!--La etiqueta link que conecta el estilo con el HTML-->
-    <link href="estilo1.css" rel="stylesheet" type="text/css">
+    <link href="/css/estilo1.css" rel="stylesheet" type="text/css">
     <title> Toulouse </title>
     </head>  
 <body> 
 	<header>
         <div class="contenedor">
-            <h3><a href="index.html">Home</a></h3>      
+            <h2><a href="index.html">Home</a></h2>      
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
                 <nav class  ="menu">                
@@ -21,28 +21,112 @@
                 <a href="actividades.html">Actividades</a>
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
-                </nav>        
-                    
+                </nav>     
         </div>  
 	</header>
     
-    <banner>
-        <section class="sec1b">
+    <div id="banner">
+        <section class="sec1b" style="background-image: url(imagenes/bg2.jpg)">
             <div class="contenedor">
-                <h1>Toulouse</h1>         
+                <h1>Población</h1>         
             </div>    
         </section>
-    </banner>
+    </div>
         
-    <section class="sec2">
-        <div class="circle"></div>
-        <h1>Ciudad</h1>
-        <p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.</p>
+    <section class="sec2">        
+        <div class="sec2b">
+            <h1><span>Vivir como un tolosano</span></h1>
+            <br>
+            <p>Toulouse propone un equilibro perfecto: siendo actualmente la 4ta ciudad 
+                de Francia con una población de 470.000 habitantes en constante 
+                crecimiento (con un aire urbano de 1.4 milliones de habitantes), 
+                la ciudad mantiene su espíritu de «pequeña ciudad» de rico patrimonio
+                cultural e histórico, así como su «estilo de vida» auténtico, todo 
+                esto combinado al dinamismo de una gran ciudad europea creativa, 
+                efervescente e innovadora.</p>
+            <br>
+            
+            <div class="actividades">
+                <div class="descripcion">
+                    <h3>Toulouse, Ciudad universitaria y cosmopolita</h3>
+                    <br>
+                    <p>Toulouse también es la segunda ciudad universitaria de Francia después 
+                        de París. Toulouse acoge unos 170.000 estudiantes provenientes de 
+                        toda Europa y del mundo entero para estudiar en sus universidades 
+                        públicas y Grandes Escuelas reconocidas.</p>
+                </div>
+                <div class="box">
+                    <div class="imagen"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="lugar">
+                        <h2>Le Capitole- Hotel de Ville</h2>
+                        <p> En el primer piso hay magníficas salas de recepción decoradas con alegorías 
+                            del Amor por Paul Gervais, diez lienzos enormes de Henri Martin, en la Sala 
+                            de los Ilustres con temas que cuentan la historia de Toulouse y 
+                            unos bustos en memoria de los hombres que dejaron su impronta en 
+                            la ciudad.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="actividades">
+                <div class="descripcion">
+                    <h3>Toulouse, Ciudad acogedora y fácil de vivir</h3>
+                    <p>A los tolosanos se les conoce por ser abiertos y acogedores. Ellos le 
+                        ayudarán a encontrar su camino y se hará amigos fácilmente en los cafés,
+                        bares y las discotecas de la ciudad. Los comerciantes y los camareros 
+                        de los cafés lo alentarán a practicar el francés.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="imagen"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="lugar">
+                        <h2>Jardin du Grand Rond</h2>
+                        <p> En Toulouse, conocerá y compartirá el estilo de vida típicamente 
+                            francés: vagar por las callejuelas animadas, pasar el tiempo en la 
+                            terraza de un café, saborear un cassoulet, un magret de canard y un 
+                            vino de Gaillac, descubrir los mercadillos al aire libre los domingos 
+                            en la mañana o irse de compras por las tiendas del centro de la ciudad 
+                            un sábado en la tarde, relajarse en un parque o jardín o pasear en 
+                            bicicleta a lo largo del Garona o del Canal du Midi.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="actividades">
+                <div class="descripcion">
+                    <h3>Toulouse, Ciudad de saberes  y de industria</h3>
+                    <p>Pionera históricamente en materia de investigación e innovación, Toulouse se ha 
+                        convertido en el centro de la industria aeronáutica y espacial, de la 
+                        biotecnología, la investigación y desarrollo de alta tecnología francesa.
+                    </p>
+                </div>
+                <div class="box">
+                    <div class="imagen"><img src="/imagenes/bg2.jpg"></div>
+                    <div class="lugar">
+                        <h2>Cite de l'espace</h2>
+                        <p> Las mejores universidad y las Grandes Escuelas lo esperan, así como 
+                            los más grandes grupos industriales internacionales (Airbus, Airbus 
+                            Defense&Space, ASTRIUM, CNES, THALES, Ariane Space, Instituto de 
+                            investigación Pierre Fabre, Capgemini…) lo que hace de Toulouse el 
+                            centro de una región económicamente dinámica y atractiva.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     
 
     </section>
-    <section class="sec5"></section>
+    <section class="sec5" style="background-image: url(imagenes/b4.jpg)"></section>
+    <div class="footer">
+        <p>Diseñado por: Esteban Sierra</p>
+        <p>Información de contacto: 
+            <a href="mailto:anesierrasa@unal.edu.co">
+                anesierrasa@unal.edu.com
+            </a>.
+        </p>
+    </div>
     
 </body>
 </html>   
