@@ -1,20 +1,23 @@
 <!DOCTYPE html>
     <!-- Ejercicio 1 - realizado por Andrés Esteban Sierra Sánchez -Gráfica interactiva-->
-
     <html lang="es">
     <head>
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <!--La etiqueta link que conecta el estilo con el HTML-->
     <link href="css/estilo1.css" rel="stylesheet" type="text/css">
-    <title> Toulouse </title>
+    <title> Actividades </title>
     </head>  
+<!-- ----------------------------  PAGINA ---------------------------------------------- -->
 <body> 
+    <!-- ----------------------------  Cabecera ---------------------------------------------- -->
 	<header>
         <div class="contenedor">
-            <h2><a href="index.html">Home</a></h2>      
+            <h2><a href="index.html">Home</a></h2> 
+            <!--Checkbox para selección del menu desplegable-->     
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
+                <!-- ----------------------- Menu ----------------------------------- -->
                 <nav class  ="menu">                
                 <a href="ubicacion.html">Ubicación</a>
                 <a href="poblacion.html">Población</a>
@@ -22,17 +25,23 @@
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
                 </nav>     
+                <!-- -------------x--------- Menu - --------------x------------------- -->
         </div>  
 	</header>
-    
+    <!-- ------------x----------------  Cabecera --------------------------x------------------- -->
+
+    <!-- -----------------------------  Banner ------------------------------------------------ -->
     <div id="banner">
-        <section class="sec1b" style="background-image: url(imagenes/b4.jpg)">
+        <section class="sec1b" style="background-image: url(imagenes/actividades.jpg)">
             <div class="contenedor">
                 <h1>Actividades</h1>         
             </div>    
         </section>
     </div>
-        
+    <!-- ------------x----------------  Banner ----------------------------x------------------- -->
+
+    <!-- -------------------------------------------  MAIN ------------------------------------------------------ --> 
+    <!-- ---------------------------- Introducción   ------------------------------------------ -->        
     <section class="sec2">
         <div class="sec2b">
             <h1><span>¿Qué hacer en Toulouse?</span></h1>
@@ -47,9 +56,11 @@
                 su estancia será un placer entre el Garona y el canal du Midi o 
                 entre Saint-Sernin y la Ciudad del Espacio.</p>
             <br>
-            <div class="actividades">
+    <!-- ------------x---------------  Introducción ------------------------x------------------- -->
+    <!-- ------------------------------  Cards(Capitole) --------------------------------------- -->
+            <div class="contenedor2">
                 <div class="card2">
-                    <div class="front"><img src="imagenes/bg2.jpg"></div>
+                    <div class="front"><img src="imagenes/capitole.jpg"></div>
                     <div class="back">
                         <h2>Le Capitole- Hotel de Ville</h2>
                         <p> En el primer piso hay magníficas salas de recepción decoradas con alegorías 
@@ -60,9 +71,10 @@
                         </p>
                     </div>
                 </div>
-
+    <!-- ---------------x--------------  Cards(Capitole) --------------------x------------------ -->
+    <!-- --------------------------------  Cards(Jardin) --------------------------------------- -->
                 <div class="card2">
-                    <div class="front"><img src="imagenes/bg2.jpg"></div>
+                    <div class="front"><img src="imagenes/jardin.jpg"></div>
                     <div class="back">
                         <h2>Jardin du Grand Rond</h2>
                         <p> Su segundo nombre es el de parque Boulingrin, lo que recuerda el 
@@ -75,9 +87,11 @@
                     </div>
                 </div>
             </div>
-            <div class="actividades">
+    <!-- ------------------x------------  Cards(Jardin) ------------x--------------------------- -->
+    <!-- ------------------------------  Cards(Espacer) ---------------------------------------- -->
+            <div class="contenedor2">
                 <div class="card2">
-                    <div class="front"><img src="imagenes/bg2.jpg"></div>
+                    <div class="front"><img src="imagenes/espacio.jpg"></div>
                     <div class="back">
                         <h2>Cite de l'espace</h2>
                         <p> Gracias al simulador de camino lunar, el visitante puede entrenarse a andar 
@@ -87,8 +101,10 @@
                         </p>
                     </div>
                 </div>
+    <!-- ---------------x--------------  Cards(Espacer) --------------x------------------------ -->
+    <!-- ---------------------------------  Cards(Pont) --------------------------------------- -->
                 <div class="card2">
-                    <div class="front"><img src="imagenes/bg2.jpg"></div>
+                    <div class="front"><img src="imagenes/pont.jpg"></div>
                     <div class="back">
                         <h2>Pont - Neuf</h2>
                         <p> La construcción a partir de 1544 del puente más 
@@ -102,18 +118,25 @@
                 </div>
             </div>
         </div>
+    <!-- -----------------x---------------  Cards(Pont) ------------------x-------------------- -->
     </section>
+    <!-- ------------x---------------  Sección Intermedia ------------------x------------------- -->
 
-    </section>
-    <section class="sec5" style="background-image: url(imagenes/b4.jpg)"></section>
+    <!-- ----------------------------  Banner final -------------------------------------------- -->
+    <section class="sec5" style="background-image: url(imagenes/actividades.jpg)"></section>
+    <!-- ------------x---------------  Banner final ------------------------x------------------- -->
+    <!-- ------------x------------------------------  MAIN ------------------------------x----------------------- --> 
+
+    <!-- ----------------------------  PIE DE PÁGINA ------------------------------------------- -->
     <div class="footer">
         <p>Diseñado por: Esteban Sierra</p>
         <p>Información de contacto: 
             <a href="mailto:anesierrasa@unal.edu.co">
                 anesierrasa@unal.edu.com
-            </a>.
+            </a>
         </p>
     </div>
-    
+    <!-- ------------x---------------  PIE DE PÁGINA ------------------------x------------------- -->
 </body>
+<!-- ------------x---------------  PAGINA --------------------------x------------------- -->
 </html>   

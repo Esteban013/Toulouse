@@ -1,4 +1,8 @@
-* {
+* 
+
+/* ------------------------------ CLASES GLOBALES ----------------------------*/
+/* ----------------------- Cuerpo ----------------------*/
+{
     margin: 0;
     padding: 0;
     /* Se aplica box-sizing para mantener el mismo tamaño del box
@@ -7,374 +11,517 @@
     font-weight: initial;
     line-height: 2rem; 
 }
-/*  font-family: Abel  */
-@font-face {
-    font-family: Abel;
-    src: url('../fonts/Abel/Abel-Regular.ttf');
-}
+/* ---------------------- Fuentes ----------------------*/
+    @font-face {
+        font-family: Abel;
+        src: url('../fonts/Abel/Abel-Regular.ttf');
+    }
+    @font-face {
+        font-family: "Lexend";
+        src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
+    }
+    /* --------------- Títulos y parrafos -------------------*/
+    h1{
+        font-family: "Lexend";
+        font-size: 2.5rem;
+    }
+    h2{
+        font-family: Lexend;
+    }
+    h3{
+        font-family: Abel;
+        font-size: 1.3rem;
+    }
+    p{
+        font-family: Lexend;
+    }
+    section{
+        width: 100%;
+    }
 
-/*  font-family: Lexend  */
-@font-face {
-    font-family: "Lexend";
-    src: url("../fonts/Lexend_Deca/LexendDeca-Regular.ttf");
-}
+/* ------------------- Contenedor -----------------------*/
+/* Se utiliza para almacenar el vinculo HOME y menú dentro
+    de un mismo div, también es utilizado en el título del 
+    banner */
+    .contenedor{
+        width: 98%;
+        margin: auto;
+    }
+/* ----------------------- CABECERA ------------------------*/
+    header {
+        width: 100%;
+        height: 4.5rem;
+        background: rgba(255,255,255,1);
+        position:fixed; 
+        color: white;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    }
+    header .contenedor{
+        display: table;
+        margin: auto;
+    }
+    header h2 a{
+        font-size: 1.6rem;
+        font-weight: initial;
+        color: #3f4954;
+        float: left;
+        text-decoration: none;
+        padding: 1rem 0 0 1rem;
+        border: none;
+    }
+    header label {
+        display: none;
+    }
+    /* ---------------------- Menu ----------------------*/
+    #menu-bar{
+        display: none;
+    }    
+    .menu{
+        font-family: Abel;
+        font-size: 1.1rem;
+        position: static;
+        width: auto;
+        height: auto;
+        display: flex;
+        border: none;
+        float: right;
+    }
+    .menu a {
+        height: 4em;
+        color: #3f4954;
+        text-decoration: none;
+        padding: 1.4rem;
+        border: none;
+        transition: 0.5s;
+    }
+    .menu a:hover{
+        color: white;
+        background: rgba(249, 149, 166,0.8);
+    }
+
+/* -------------------- SECCION FINAL --------------------------*/
+    section.sec5{    
+        height: 50vh;
+        position: relative;
+        overflow: hidden;
+        background-position:bottom;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    section.sec5:before{
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background:white;
+        transform-origin: left;
+        transform: skewY(5deg);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.8);
+    }
+/* -------------------- PIE DE PÁGINA --------------------------*/
+    .footer{
+        background-color: #3f4954;
+        color: white;
+        width: 100%;
+        height: 5rem;
+        text-align: center;
+        bottom: 0px;
+        padding: .5rem;
+    }
+/* --------------x-------------- CLASES GLOBALES --------------x-------------*/
+
+/* ------------------------------ CLASES - INDEX ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    index.html */
+/* ----------------------- BANNER --------------------------*/
+    /* ---------------------- Fondo ----------------------*/    
+    #banner .sec1{
+        height: 100vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        background: url(../imagenes/principal.jpeg);
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #banner .sec1:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: -50%;
+        width: 100%;
+        height: 100%;
+        background:white;
+        transform-origin: right;
+        transform: skewY(5deg);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+    #banner .sec1:after{
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: -50%;
+        width: 100%;
+        height: 100%;
+        background:#fff;
+        transform-origin: left;
+        transform: skewY(-5deg);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.5);
+    }
+    /* --------------------- Títulos --------------------*/      
+    #banner .sec1 .contenedor{
+        position: absolute;
+        text-align: center;
+        padding-top: 10rem;
+    }
+    #banner .sec1 .contenedor h1{
+        color: white;
+        font-size: 5em;
+        line-height: 1.4em;
+    }
+    #banner .sec1 .contenedor h2{
+        color: white;
+        font-size: 2em;
+        line-height: 1.4em;
+    }
+    /* ---------------------- Botón ----------------------*/      
+    #banner .sec1 .btn{
+        margin: 10px;
+        background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+        background-size: cover;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.8);
+    }
+    #banner .sec1 .btn:hover{
+        background: transparent;
+        border: 1px solid white;
+        color: white;
+    }
+    button.btn{
+        border: none;
+        border-radius: 2rem;
+        padding: 1rem 3rem;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+/* -----------x----------- BANNER ---------------x----------*/
+
+/* -------------------- INTRODUCCIÓN -----------------------*/
+
+    section.sec2{
+        height: auto;
+        padding: 5rem;
+        box-sizing: border-box;
+        text-align: justify;
+        line-height: 2rem;    
+        justify-content: center;
+    }
+    /* --------------------- Títulos --------------------*/   
+    .sec2 h1{
+        text-align: center;
+        font-size: 3rem;
+        max-width: 800px;
+        position: relative;
+        margin: auto;
+    }
+    .sec2 h1:before{
+        content: "";
+        display: block;
+        width: 15rem;
+        height: 0.1rem;
+        background: #000;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    .sec2 h1:after{
+        content: "";
+        display: block;
+        width: 15rem;
+        height: 0.1rem;
+        background: #000;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        z-index: -2;
+    }
+    .sec2 span{
+        background: #fff;
+    }
+/* ---------x----------- INTRODUCCIÓN ------------x---------*/
+
+/* ----------------- SECCIÓN INTERMEDIO --------------------*/
+    section.sec3{
+        position: absolute;
+        color: white;
+        height: 30rem;
+        display: flex;
+        position: relative;
+        overflow: hidden;
+        background-image: url(/imagenes/sec3.jpg);
+        background-size: cover;
+        z-index: -1;
+    }    
+    section.sec3:before{        
+        content: '';
+        position: absolute;
+        bottom: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background:white;
+        transform-origin: left;
+        transform: skewY(2deg);
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    }
+    section.sec3:after{        
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background:white;
+        transform-origin: left;
+        transform: skewY(-2deg);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.8);
+    }
+    .sec3 .content{
+        position: relative;
+        z-index: -2;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        background: rgba(249, 149, 166,0.8);  
+        padding: 10% 5%;         
+    }
+    /* --------------------- Parrafos --------------------*/   
+    .sec3 .content p{
+        font-size: 0.9rem;
+        line-height: 1.5em;
+        text-align: justify;
+        
+    }
+/* ---------x------- SECCIÓN INTERMEDIO ----------x---------*/
+
+/* ---------------- FICHAS DESCRIPTIVAS -------------------*/
+    section.sec4{
+        padding-top: 2rem;
+        display: flex;
+        justify-content: center;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .descripcion{
+        width: 300px;
+        text-align: right;
+        content: center;
+        height: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    /* --------------------- Fichas --------------------*/   
+    .sec4 .card{
+        position: relative;
+        width: 300px;
+        height: auto;
+        border-radius: 18px;
+        box-shadow: 0 2px 2px rgba(0,0,0,0.6);
+        margin: 30px;
+        overflow: hidden;
+        text-align: center;
+        transition: all 0.25s;
+    }
+    .sec4 .card:hover{
+        transform: scale(1.05);
+    }
+    .sec4 .card img{
+        width: 300px;
+        height: 220px;
+    }
+
+    .sec4 .card p{
+        margin: 30px;
+        font-size: .9rem;
+        line-height: 1.5rem;
+        text-align: justify;
+        height: 10rem;
+    }
+    /* --------------------- Títulos --------------------*/   
+    .sec4 .card .subcard2{
+        background: white;
+        color:rgba(88, 3, 187,0.8);
+    }
+    .sec4 .card .subcard3{
+        background: white;        
+        color:rgba(113, 113, 113,1);
+    }
+    .sec4 .card h3{        
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+/* --------x------- FICHAS DESCRIPTIVAS ---------x---------*/
+/* ------------x----------------- CLASES - INDEX --------------x-------------*/
+
+/* ---------------------------- CLASES - PAGINAS ----------------------------*/
+/* A continuación se muestran las clases utilizadas en las paginas ubicación,
+    población, actividades y historia */
+/* ----------------------- BANNER --------------------------*/
+    /* ---------------------- Fondo ----------------------*/ 
+    #banner .sec1b{
+        height: 25rem;
+        position: relative;
+        display: flex;
+        color: white;    
+        overflow: hidden;
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        justify-content: center;
+    }
+    #banner .sec1b:before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background:white;
+        transform-origin: left;
+        transform: skewY(-8deg);
+        box-shadow: 5px 0px 15px rgba(0, 0, 0, 0.8);
+    }
+    #banner .sec1b .contenedor{
+        position: absolute;
+        text-align: left;
+        padding-top: 10rem;
+        padding-left: 5%;        
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }
+    /* --------------------- Títulos --------------------*/
+    #banner .sec1b .contenedor h1{
+        font-size: 5rem;
+    }
+    .sec2b h1{
+        line-height: 3rem;
+    }
+
+/* -------------x-------------- CLASES - PAGINAS -------------x--------------*/
 
 
-h1{
-    font-family: "Lexend";
-    font-size: 2.5rem;
-}
+/* ---------------------------- CLASES - UBICACIÓN ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    ubicación.html */
+/* --------------x------------- CLASES - UBICACIÓN --------------x-------------*/
+    .mapa{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
 
-h2{
-    font-family: Lexend;
-}
+/* ---------------------------- CLASES - POBLACIÓN ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    población.html */
+    
+    .sec2 .box{
+        padding-left: 5rem;
+        padding-right: 5rem;
+        display: flex;
+        position: relative;
+        margin: auto;
+        width: 24rem;
+        height: 24rem;
+        transition: 0.5s;
+        margin: 10px;
+    }
+    .sec2 .box:hover{
+        z-index: 1;
+        transform: scale(1.1);
+        box-shadow: 0 25px 45 rgba(0,0,0,0.5);
+    }
+    .box .imagen{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+    .box .imagen:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background: linear-gradient(180deg,rgb(228, 55, 185),rgb(241, 237, 237));
+        mix-blend-mode: multiply;
+        opacity: 0;
+        transition: 0.5s;
+        border-radius: 18px;
+    }
+    .box:hover .imagen:before{
+        opacity: 1;
+    }
+    .box .imagen img{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+    }
+    .box .lugar{
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 30px;
+        color: white;
+    }
+    .box .lugar h2{
+        width: 100%;
+        transition: 0.5s;
+        margin-bottom: 5px;
+        transform: translateY(100px);
+        line-height: 2rem;
+        opacity: 0;    
+    }
+    .box:hover .lugar h2{
+        transform: translateY(0px);
+        transition-delay: 0.6s;
+        opacity: 1;    
+    }
+    .box .lugar p{
+        transition: 0.5s;
+        transform: translateY(100px);
+        line-height: 1.2rem;
+        opacity: 0;    
+    }
+    .box:hover .lugar p{
+        transform: translateY(0px);
+        transition-delay: 0.6s;
+        opacity: 1;  
+    }
+/* --------------x------------- CLASES - POBLACIÓN --------------x-------------*/
 
-h3{
-    font-family: Abel;
-    font-size: 1.3rem;
-}
 
-p{
-    font-family: Lexend;
-}
-
-.contenedor{
-    width: 98%;
-    margin: auto;
-}
-header {
-    width: 100%;
-    height: 4.5rem;
-    background: rgba(255,255,255,1);
-    position:absolute; 
-    color: white;
-    top: 0;
-    left: 0;
-    z-index: 100;
-}
-header .contenedor{
-    display: table;
-    margin: auto;
-}
-header h2 a{
-    font-size: 1.6rem;
-    font-weight: initial;
-    color: #3f4954;
-    float: left;
-    text-decoration: none;
-    padding: 1rem 0 0 1rem;
-    border: none;
-}
-header label {
-    display: none;
-}
-#menu-bar{
-    display: none;
-}
-.menu{
-    font-family: Abel;
-    font-size: 1.1rem;
-    position: static;
-    width: auto;
-    height: auto;
-    display: flex;
-    border: none;
-    float: right;
-}
-.menu a {
-    height: 4em;
-    color: #3f4954;
-    text-decoration: none;
-    padding: 1.4rem;
-    border: none;
-    transition: 0.5s;
-}
-.menu a:hover{
-    color: white;
-    background: rgba(235,90,121,0.8);
-}
-
-section{
-    width: 100%;
-}
-#banner .sec1{
-    height: 110vh;
-    position: relative;
+/* ---------------------------- CLASES - ACTIVIDADES ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    actividades.html */
+    .sec2 .contenedor2{
     display: flex;
     justify-content: center;
-    overflow: hidden;
-    background: url(../imagenes/bg2.jpg);
-    background-attachment:fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-#banner .sec1:before{
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: -50%;
-    width: 100%;
-    height: 100%;
-    background:#fff;
-    transform-origin: right;
-    transform: skewY(8deg);
-}
-#banner .sec1:after{
-    content: '';
-    position: absolute;
-    top: 100%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background:#fff;
-    transform-origin: left;
-    transform: skewY(-8deg);
-}
-#banner .sec1 .contenedor{
-    position: absolute;
-    text-align: center;
-    padding-top: 11rem;
-}
-#banner .sec1 .contenedor h1{
-    color: white;
-    font-size: 5em;
-    line-height: 1.4em;
-}
-#banner .sec1 .contenedor h2{
-    color: white;
-    font-size: 2em;
-    line-height: 1.4em;
-}
-#banner .sec1 .btn{
-    margin: 10px;
-    background: gray;
-    background-size: cover;
-}
-#banner .sec1 .btn:hover{
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-}
-button.btn{
-    border: none;
-    border-radius: 2rem;
-    padding: 1rem 3rem;
-    font-size: 1rem;
-    cursor: pointer;
-}
-
-section.sec5{    
-    height: 65vh;
-    position: relative;
-    overflow: hidden;
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-section.sec5:before{
-    content: '';
-    position: absolute;
-    bottom: 100%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    background:#fff;
-    transform-origin: left;
-    transform: skewY(8deg);
-}
-
-
-section.sec2{
-    height: auto;
-    padding: 15vmin;
-    margin: auto;
-    box-sizing: border-box;
-    text-align: justify;
-    line-height: 2rem;    
-    justify-content: center;
-}
-.sec2 h1{
-    text-align: center;
-    font-size: 3rem;
-    max-width: 800px;
-    position: relative;
-    margin: auto;
-}
-.sec2 h1:before{
-    content: "";
-    display: block;
-    width: 15rem;
-    height: 0.1rem;
-    background: #000;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    z-index: -2;
-}
-.sec2 h1:after{
-    content: "";
-    display: block;
-    width: 15rem;
-    height: 0.1rem;
-    background: #000;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    z-index: -2;
-}
-.sec2 span{
-    background: #fff;
-}
-
-
-section.sec3{
-    color: white;
-    height: 26rem;
-    display: flex;
-    background-color:white;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-}
-
- .sec3 .content{
-    padding: 2% 5%;
-    text-align: left;
-    width: calc(50% - 50px);
-    height: 100%;
-    background-color: rgba(237, 94, 124, 1);
-    box-sizing: border-box;
-}
- .sec3 .content p{
-    font-size: .8rem;
-    line-height: 1.5em;
-    text-align: justify;
-}
- .sec3 .image{
-    width: calc(50% + 50px);
-    height: 100%;
-    box-sizing: border-box;
-    border-left: 100px solid rgba(237, 94, 124, 1);
-    border-bottom: 26rem solid transparent;
-    background: url(../imagenes/b4.jpg); 
-    background-position: -100px 0px;
-}
-
-section.sec4{
-    padding-top: 5rem;
-    display: flex;
-    justify-content: center;
-    height: auto;
-    flex-wrap: wrap;
-}
-.descripcion{
-    width: 300px;
-    text-align: right;
-    content: center;
-    height: auto;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-.sec4 .card{
-    position: relative;
-    width: 300px;
-    height: auto;
-    border-radius: 18px;
-    box-shadow: 0 2px 2px rgba(0,0,0,0.6);
-    margin: 30px;
-    overflow: hidden;
-    text-align: center;
-    transition: all 0.25s;
-}
-.sec4 .card:hover{
-    transform: translateY(-15px);
-    box-shadow: 0 17px 16px rgba(0,0,0,0.2);
-}
-.sec4 .card img{
-    width: 300px;
-    height: 220px;
-}
-.sec4 .card p{
-    margin: 30px;
-    font-size: .8rem;
-    line-height: 1.3rem;
-    text-align: justify;
-    height: 12.4rem;
-}
-.sec4 .card .subcard2{
-    background: blue;
-}
-.sec4 .card .subcard3{
-    background: rosybrown;
-}
-
-
-
-
-
-
-#banner .sec1b{
-    height: 25rem;
-    position: relative;
-    display: flex;
-    color: white;    
-    overflow: hidden;
-    background-attachment:fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-}
-
-#banner .sec1b:before{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 200px;
-    background: white;
-    clip-path: polygon(0% 100%,100% 40%,100% 100%);
-}
-
-#banner .sec1b .contenedor{
-    position: absolute;
-    text-align: left;
-    padding-top: 10rem;
-    padding-left: 5%;
-}
-
-#banner .sec1b .contenedor h1{
-    font-size: 5rem;
-}
-
-
-.sec2 .sec2b .circle{
-    width: 200px;
-    height: 200px;
-    background: url(../imagenes/bg3.jpg);
-    border-radius: 50%;
-    float: left;
-    shape-outside: circle();
-    margin: 30px 30px 30px 0;
-}
-
-
-.footer{
-    background-color: white;
-    width: 100%;
-    height: 5rem;
-    text-align: center;
-    bottom: 0;
-    padding: .5rem;
-}
-
-
-.sec2b h1{
-    line-height: 3rem;
-}
-.sec2 .actividades{
-    display: flex;
-    justify-content: center;
-}
-.sec2 .card2{
+    margin-bottom: 2rem;
+    }
+    /* ---------------------- CARDS ----------------------*/ 
+    .sec2 .card2{
     position: relative;
     width: 98%;
     height: 30rem;
@@ -382,27 +529,23 @@ section.sec4{
     margin-bottom: 5rem;
     transform-style: preserve-3d;
     transition: transform .4s linear;
-}
-
-.sec2 .front{
+    }
+    .sec2 .front{
+    justify-content: center;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-}
-
-.front img{
+    }
+    .front img{
     width: 98%;
-    height: 30rem;
-    
+    height: 30rem;    
     border-radius: 20px;
-}
-
-.sec2 .card2:hover{
+    }
+    .sec2 .card2:hover{
     transform: rotateY(180deg);
-}
-
-.sec2 .back{
+    }
+    .sec2 .back{
     padding: 2rem;
     width: 100%;
     height: 100%;
@@ -412,165 +555,114 @@ section.sec4{
     transform: rotateY(180deg);
     text-align: center;
     border-radius: 20px;
-}
+    }
+
+/* --------------x------------- CLASES - ACTIVIDADES --------------x-------------*/
+
+/* ---------------------------- CLASES - HISTORIA ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    historia.html */
+
+    .sec2b .contenedor3{
+        position: relative;
+        width: 100%;
+        padding: 1rem 5rem;
+    }
+    .contenedor3 h2{
+        font-size: 2rem;
+        text-align: center;
+    }    
+    .sec2b .contenedor3 img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    .sec2 .sec2b .imgBox{
+        position: relative;
+        overflow: hidden;
+        width: 400px;
+        height: 400px;
+        float: left;
+        border-radius: 50%;
+        margin: 20px;
+        shape-outside: circle();
+    }
+    .sec2 .sec2b .imgBox2{        
+        position: relative;
+        overflow: hidden;
+        width: 300px;
+        height: 300px;
+        float: right;
+        border-radius: 50%;
+        margin: 20px;
+        shape-outside: circle();
+    }
+/* --------------x------------- CLASES - HISTORIA --------------x-------------*/
 
 
-.sec2 .actividades{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
+/* ---------------------------- CLASES - REFERENCIAS ----------------------------*/
+/* A continuación se muestran las clases utilizadas únicamente en la pagina 
+    referencias.html */
+    #banner .referencias{
+        height: 25rem;
+        position: relative;
+        display: flex;
+        color: white;    
+        overflow: hidden;
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        justify-content: center;
+    }    
+    #banner .referencias:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;      
+        background:url("../imagenes/referencias.jpg");
+        border-radius: 0 0 50% 50%/ 0  0 100% 100%;
+        transform: scaleX(1.5);
+        background-attachment:fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }    
+    #banner .referencias .contenedor{
+        position: absolute;
+        text-align: center;
+        padding-top: 13rem;
+        padding-left: 5%;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    }    
+    #banner .referencias .contenedor h1{
+        font-size: 5rem;
+    }
+/* --------------x------------- CLASES - REFERENCIAS --------------x-------------*/
 
-.sec2 .box{
-    padding-left: 5rem;
-    padding-right: 5rem;
-    display: flex;
-    position: relative;
-    margin: auto;
-    width: 24rem;
-    height: 24rem;
-    transition: 0.5s;
-    margin: 10px;
-}
-
-.sec2 .box:hover{
-    z-index: 1;
-    transform: scale(1.1);
-    box-shadow: 0 25px 45 rgba(0,0,0,0.5);
-}
-
-.box .imagen{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
-
-.box .imagen:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(180deg,rgb(228, 55, 185),rgb(241, 237, 237));
-    mix-blend-mode: multiply;
-    opacity: 0;
-    transition: 0.5s;
-    border-radius: 18px;
-}
-
-.box:hover .imagen:before{
-    opacity: 1;
-}
-
-.box .imagen img{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-}
-
-
-.box .lugar{
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    color: white;
-}
-
-.box .lugar h2{
-    width: 100%;
-    transition: 0.5s;
-    margin-bottom: 5px;
-    transform: translateY(100px);
-    line-height: 2rem;
-    opacity: 0;    
-}
-
-.box:hover .lugar h2{
-    transform: translateY(0px);
-    transition-delay: 0.6s;
-    opacity: 1;    
-}
-
-.box .lugar p{
-    transition: 0.5s;
-    transform: translateY(100px);
-    line-height: 1.2rem;
-    opacity: 0;    
-}
-
-.box:hover .lugar p{
-    transform: translateY(0px);
-    transition-delay: 0.6s;
-    opacity: 1;    
-
-}
-
-
-
-
-
-
-
-
-
-
-#banner .referencias{
-    height: 25rem;
-    position: relative;
-    display: flex;
-    color: white;    
-    overflow: hidden;
-    background-attachment:fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    justify-content: center;
-}
-
-#banner .referencias:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;      
-    background:url("../imagenes/bg2.jpg");
-    border-radius: 0 0 50% 50%/ 0  0 100% 100%;
-    transform: scaleX(1.5);
-}
-
-#banner .referencias .contenedor{
-    position: absolute;
-    text-align: center;
-    padding-top: 13rem;
-    padding-left: 5%;
-}
-
-#banner .referencias .contenedor h1{
-    font-size: 5rem;
-}
-
+/* ----------------------------- RESPONSIVE 800PX--------------------------------*/
 @media only screen and (max-width: 800px) { 
+    /* ----------------------- CABECERA ------------------------*/
+    /* ---------------------- Menu ----------------------*/
     .menu{
+        padding-top: 4rem;
         position: absolute;        
         display: block; 
         top: 4.5rem;
         left: 0; 
         width: 50%;
-        height: 100h;
-        background: rgba(255,255,255,0.5);
+        height: 100vh;
+        background: rgba(255,255,255,1);
         transition: all 0s;
         transform: translateX(-100%);
     }
     .menu a{
-        display: block; 
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);        
+        display: block;     
         color: black;
+        text-align: center;
     }
     header label {
         display: initial;
@@ -585,9 +677,22 @@ section.sec4{
     .menu a:hover{
     background: rgba(235,90,121,0.8);
     }
+    /* ------------------- INTRODUCCIÓN -------------------------*/
     section.sec2{
         padding: 5rem; 
     }
+    .sec2 .contenedor2{
+        flex-wrap: wrap;
+    }
+    .sec2 .descripcion{
+        width: 100%;
+        text-align: justify;
+    }
+    /* ---------------- SECCIÓN INTERMEDIA ----------------------*/
+    section.sec3{
+        height: auto; 
+    }
+    /* --------------------- Título----------------------*/
     .sec2 .sec2b h1:before{
         background: transparent;
     }
@@ -597,42 +702,54 @@ section.sec4{
     .sec2 .sec2b span{
         background: transparent;
     }
-
+    /* --------------------- Título----------------------*/
     .sec4 .descripcion{
         padding: 1rem 5rem; 
         text-align: center;
         width: 100%;
     }
-    .sec2 .actividades{
-        flex-wrap: wrap;
-    }
-    .sec2 .descripcion{
-        width: 100%;
-        text-align: justify;
-    }
+    /* --------------- Card - Poblacion------------------*/
     .sec2 .box{
         width: 100%;
         margin: auto;
         padding-left: 0rem;
         padding-top: 1rem;
-    }
+    }    
 }
+/* --------------x-------------- RESPONSIVE 800PX-----------------x--------------*/
 
-    
+/* ----------------------------- RESPONSIVE 500PX---------------------------------*/    
 @media only screen and (max-width: 500px) { 
+    /* ----------------------- CABECERA ------------------------*/
+    /* ---------------------- Menu ----------------------*/
     #menu-bar:checked ~ .menu{
         width: 100%;
         transform: translateX(0%);
     }
+    /* ---------------------- BANNER ---------------------------*/
     #banner .sec1b .contenedor h1{
         font-size: 4rem;
     }
+    /* ------------------- INTRODUCCIÓN -------------------------*/
     section.sec2{
         padding: 3rem; 
     }
+    /* ------------- Card - Actividades -----------------*/
     .sec2 .card2{
         width: 22rem;
         height: 30rem;
         margin: 8px;
     }
+    /* ---------------- SECCIÓN INTERMEDIA ----------------------*/
+    section.sec3{
+        display: flex;
+        padding-top: 60%;
+        background-attachment: inherit;
+    }
+    .sec3 .content{
+        left: 0%;
+        width: 100%;
+        transform-origin: 50% top;
+    } 
 }
+/* --------------x-------------- RESPONSIVE 500PX-----------------x---------------*/ 

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
     <!-- Ejercicio 1 - realizado por Andrés Esteban Sierra Sánchez -Gráfica interactiva-->
-
     <html lang="es">
     <head>
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
@@ -9,12 +8,16 @@
     <link href="css/estilo1.css" rel="stylesheet" type="text/css">
     <title> Toulouse </title>
     </head>  
+<!-- ----------------------------  PAGINA ---------------------------------------------- -->
 <body> 
+    <!-- ----------------------------  Cabecera ---------------------------------------------- -->
 	<header>
         <div class="contenedor">
-            <h2><a href="index.html">Home</a></h2>      
+            <h2><a href="index.html">Home</a></h2> 
+            <!--Checkbox para selección del menu desplegable-->     
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
+                <!-- ----------------------- Menu ----------------------------------- -->
                 <nav class  ="menu">                
                 <a href="ubicacion.html">Ubicación</a>
                 <a href="poblacion.html">Población</a>
@@ -22,19 +25,26 @@
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
                 </nav>     
+                <!-- -------------x--------- Menu - --------------x------------------- -->
         </div>  
 	</header>
-    
+    <!-- ------------x----------------  Cabecera --------------------------x------------------- -->
+
+    <!-- -----------------------------  Banner ------------------------------------------------ -->
     <div id="banner">
         <section class="sec1">
             <div class="contenedor">
                 <h1>Toulouse</h1>
                 <h2>La ville rose</h2>
-                <button class="btn">Explore</button>            
+                <button class="btn"><h3>Explore</h3></button>            
             </div>    
         </section>
     </div>
-        
+    <!-- ------------x----------------  Banner ----------------------------x------------------- -->
+    
+
+    <!-- -------------------------------------------  MAIN ------------------------------------------------------ --> 
+    <!-- ---------------------------- Introducción   ------------------------------------------ -->    
     <section class="sec2">
         <h1><span>Bienvenidos</span></h1>
         <br>
@@ -47,21 +57,25 @@
         visita a la Ciudad Rosa… ¡que seguro que te encantan!
         </p>
     </section>
-    
-    <section class="sec3">
-        <div class="content">
-        <h1>Toulouse, capital occitana</h1>
-        <br>
-            <p>Toulouse es una etapa capital en el Sudoeste de Francia. Antiguamente fue capital visigoda; 
-            hoy es una gran capital de la aeronáutica y del espacio. Toulouse invita a todos a descubrir 
-            sus dos mil años de historia. Ya sea su basílica románica, o sus discretos palacetes renacentistas 
-            con su imponente pórtico, o una fachada con una increíble decoración de tierra cocida, o el murmullo 
-            de una fuente o un patio recóndito… Déjese llevar por todos sus barrios que rezuman historia y modernidad.</p>
-        </div>
-        <div class="image"></div>        
-    </section>
+    <!-- ------------x---------------  Introducción ------------------------x------------------- -->
 
+    <!-- ----------------------------  Sección Intermedia -------------------------------------- -->
+    <section class="sec3"> 
+        <div class="content">
+            <h1>Toulouse, capital occitana</h1>
+            <br>
+                <p>Toulouse es una etapa capital en el Sudoeste de Francia. Antiguamente fue capital visigoda; 
+                hoy es una gran capital de la aeronáutica y del espacio. Toulouse invita a todos a descubrir 
+                sus dos mil años de historia. Ya sea su basílica románica, o sus discretos palacetes renacentistas 
+                con su imponente pórtico, o una fachada con una increíble decoración de tierra cocida, o el murmullo 
+                de una fuente o un patio recóndito… Déjese llevar por todos sus barrios que rezuman historia y modernidad.</p>
+        </div>        
+    </section>
+    <!-- ------------x---------------  Sección Intermedia ------------------x------------------- -->
+
+    <!-- ----------------------------  Sección Final ------------------------------------------- -->
     <section class="sec4">
+        <!-- ----------------------------  Descripción ---------------------------------------------- -->
         <div class="descripcion">
             <h2>Descubre lo más icónico de Toulouse</h2>
             <br>
@@ -69,20 +83,22 @@
             orillas del río Garona o del Canal de Midi rodeado de violetas, pasear por sus calles 
             animadas o viajar al espacio</p>
         </div>
-
+        <!-- ------------x---------------  Descripción --------------------------x------------------- -->
+        <!-- ------------------------  Fichas descriptiva (Violeta) --------------------------------- -->
         <div class="card">
-            <img src="imagenes/bg2.jpg">
+            <img src="imagenes/violeta.jpg">
             <p>Toulouse es conocida también como la 'ciudad de las violetas'.
                 La pasión por estas flores es una importación de Italia y se 
                 comenzó a desarrollar en la ciudada a mediados del siglo XIX. 
-                Visitamos una tienda-barco donde, entre otros productos derivadas 
-                de esta flor, se vende miel, mermelada, mostaza, sal, vinagre y jabón de violetas. </p>
+            </p>
             <div class="subcard2">
                 <h3>Violeta</h3>
             </div>
         </div>
+        <!-- -----------x------------  Fichas descriptiva (Violeta) -------------x------------------- -->
+        <!-- ------------------------  Fichas descriptiva (Aeronáutica) ----------------------------- -->
         <div class="card">
-            <img src="imagenes/bg2.jpg">
+            <img src="imagenes/aero.jpg">
             <p>Esta ciudad puede llegar a ser el sueño de cualquier aviador, por que no solo
                 se puede estudiar y capacitarse por la tecnología de punta que se maneja en la ciudad si 
                 no que se puede hacer carrera entre los mejores.
@@ -91,17 +107,25 @@
                 <h3>Aeronáutica</h3>
             </div>
         </div>
+        <!-- -----------x------------  Fichas descriptivas (Aeronáutica) ---------x------------------- -->
     </section>
-    <section class="sec5" style="background-image: url(imagenes/b4.jpg)"></section>
-    
+    <!-- --------------x-------------  Sección Final -----------------------------x------------- -->
+
+    <!-- ----------------------------  Banner final -------------------------------------------- -->
+    <section class="sec5" style="background-image: url(imagenes/final2.jpg)"></section>
+    <!-- ------------x---------------  Banner final ------------------------x------------------- -->
+    <!-- ------------x------------------------------  MAIN ------------------------------x----------------------- --> 
+
+    <!-- ----------------------------  PIE DE PÁGINA ------------------------------------------- -->
     <div class="footer">
         <p>Diseñado por: Esteban Sierra</p>
         <p>Información de contacto: 
             <a href="mailto:anesierrasa@unal.edu.co">
                 anesierrasa@unal.edu.com
-            </a>.
+            </a>
         </p>
     </div>
-    
+    <!-- ------------x---------------  PIE DE PÁGINA ------------------------x------------------- -->
 </body>
+<!-- ------------x---------------  PAGINA --------------------------x------------------- -->
 </html>   
