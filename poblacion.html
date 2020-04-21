@@ -1,6 +1,5 @@
 <!DOCTYPE html>
     <!-- Ejercicio 1 - realizado por Andrés Esteban Sierra Sánchez -Gráfica interactiva-->
-
     <html lang="es">
     <head>
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
@@ -9,12 +8,16 @@
     <link href="css/estilo1.css" rel="stylesheet" type="text/css">
     <title> Toulouse </title>
     </head>  
+<!-- ----------------------------  PAGINA ---------------------------------------------- -->
 <body> 
+    <!-- ----------------------------  Cabecera ---------------------------------------------- -->
 	<header>
         <div class="contenedor">
-            <h2><a href="index.html">Home</a></h2>      
+            <h2><a href="index.html">Home</a></h2> 
+            <!--Checkbox para selección del menu desplegable-->     
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
+                <!-- ----------------------- Menu ----------------------------------- -->
                 <nav class  ="menu">                
                 <a href="ubicacion.html">Ubicación</a>
                 <a href="poblacion.html">Población</a>
@@ -22,9 +25,12 @@
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
                 </nav>     
+                <!-- -------------x--------- Menu - --------------x------------------- -->
         </div>  
 	</header>
-    
+    <!-- ------------x----------------  Cabecera --------------------------x------------------- -->
+
+    <!-- -----------------------------  Banner ------------------------------------------------ -->
     <div id="banner">
         <section class="sec1b" style="background-image: url(imagenes/poblacion.jpg)">
             <div class="contenedor">
@@ -32,7 +38,10 @@
             </div>    
         </section>
     </div>
-        
+    <!-- ------------x----------------  Banner ----------------------------x------------------- -->
+    
+    <!-- -------------------------------------------  MAIN ------------------------------------------------------ --> 
+    <!-- ---------------------------- Introducción   ------------------------------------------ -->
     <section class="sec2">        
         <div class="sec2b">
             <h1><span>Vivir como un tolosano</span></h1>
@@ -47,44 +56,54 @@
             <br>
         </div>
     </section>
-            <div class="contenedor2">
-                <div class="descripcion">
-                    <h3>Toulouse, Ciudad universitaria y cosmopolita</h3>
-                    <br>
-                    <p>Toulouse también es la segunda ciudad universitaria de Francia después 
-                        de París. Toulouse acoge unos 170.000 estudiantes provenientes de 
-                        toda Europa y del mundo entero para estudiar en sus universidades 
-                        públicas y Grandes Escuelas reconocidas.</p>
-                </div>
-                <div class="box"><img src="imagenes/estudiante.jpg"></div>
+    <!-- ------------x---------------  Introducción ------------------------x------------------- -->
+    <!-- ---------------------------- Seccion intermedia   ------------------------------------- -->
+        <!-- ---------------------------- Primer párrafo   ------------------------------------- -->
+        <div class="contenedor2">
+            <div class="descripcion">
+                <h3>Toulouse, Ciudad universitaria y cosmopolita</h3>
+                <br>
+                <p>Toulouse también es la segunda ciudad universitaria de Francia después 
+                    de París. Toulouse acoge unos 170.000 estudiantes provenientes de 
+                    toda Europa y del mundo entero para estudiar en sus universidades 
+                    públicas y Grandes Escuelas reconocidas.</p>
             </div>
-            <div class="contenedor2 b">
-                <div class="box"><img src="imagenes/bares.jpg"></div>
-                <div class="descripcion">
-                    <h3>Toulouse, Ciudad acogedora y fácil de vivir</h3>
-                    <p>A los tolosanos se les conoce por ser abiertos y acogedores. Ellos le 
-                        ayudarán a encontrar su camino y se hará amigos fácilmente en los cafés,
-                        bares y las discotecas de la ciudad. Los comerciantes y los camareros 
-                        de los cafés lo alentarán a practicar el francés.
-                    </p>
-                </div>                
+            <div class="box"><img src="imagenes/estudiante.jpg"></div>
+        </div>
+        <!-- --------------------------- Segundo párrafo   ------------------------------------- -->
+        <div class="contenedor2 b">
+            <div class="box"><img src="imagenes/bares.jpg"></div>
+            <div class="descripcion">
+                <h3>Toulouse, Ciudad acogedora y fácil de vivir</h3>
+                <p>A los tolosanos se les conoce por ser abiertos y acogedores. Ellos le 
+                    ayudarán a encontrar su camino y se hará amigos fácilmente en los cafés,
+                    bares y las discotecas de la ciudad. Los comerciantes y los camareros 
+                    de los cafés lo alentarán a practicar el francés.
+                </p>
+            </div>                
+        </div>
+        <!-- ---------------------------- Tercer párrafo   ------------------------------------- -->
+        <div class="contenedor2">
+            <div class="descripcion">
+                <h3>Toulouse, Ciudad de saberes  y de industria</h3>
+                <p>Pionera históricamente en materia de investigación e innovación, Toulouse se ha 
+                    convertido en el centro de la industria aeronáutica y espacial, de la 
+                    biotecnología, la investigación y desarrollo de alta tecnología francesa.
+                </p>
             </div>
-            <div class="contenedor2">
-                <div class="descripcion">
-                    <h3>Toulouse, Ciudad de saberes  y de industria</h3>
-                    <p>Pionera históricamente en materia de investigación e innovación, Toulouse se ha 
-                        convertido en el centro de la industria aeronáutica y espacial, de la 
-                        biotecnología, la investigación y desarrollo de alta tecnología francesa.
-                    </p>
-                </div>
-                <div class="box"><img src="imagenes/bio.jpg"></div>
-            </div>
+            <div class="box"><img src="imagenes/bio.jpg"></div>
+        </div>
+    <!-- ------------x--------------- Seccion intermedia   -----------------x------------------- -->
+    <!-- ----------------------------  Banner final -------------------------------------------- -->
     <section class="sec5" style="background-image: url(imagenes/poblacion.jpg)"></section>
+    <!-- ------------x---------------  Banner final ------------------------x------------------- -->
+    <!-- ------------x------------------------------  MAIN ------------------------------x----------------------- -->
+
     <!-- ----------------------------  PIE DE PÁGINA ------------------------------------------- -->
     <div class="footer">
     <p>&copy Esteban Sierra, 2020</p>
     </div>
      <!-- ------------x---------------  PIE DE PÁGINA ------------------------x------------------- -->
-    
 </body>
+<!-- ------------x---------------  PAGINA --------------------------x------------------- -->
 </html>   

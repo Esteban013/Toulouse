@@ -1,6 +1,5 @@
 <!DOCTYPE html>
     <!-- Ejercicio 1 - realizado por Andrés Esteban Sierra Sánchez -Gráfica interactiva-->
-
     <html lang="es">
     <head>
     <!--En la etiqueta meta se encuentra el atributo que habilita los carácteres para el lenguaje español y también aquellos que permiten un diseño web responsivo, que cambie respecto al tamaño de la pantalla desde el css-->
@@ -9,12 +8,16 @@
     <link href="css/estilo1.css" rel="stylesheet" type="text/css">
     <title> Toulouse </title>
     </head>  
+<!-- ----------------------------  PAGINA ---------------------------------------------- -->
 <body> 
+    <!-- ----------------------------  Cabecera ---------------------------------------------- -->
 	<header>
         <div class="contenedor">
-            <h2><a href="index.html">Home</a></h2>      
+            <h2><a href="index.html">Home</a></h2> 
+            <!--Checkbox para selección del menu desplegable-->     
             <input type="checkbox" id="menu-bar">
             <label for="menu-bar"><img src="imagenes/menu.png" width="30px"></label>
+                <!-- ----------------------- Menu ----------------------------------- -->
                 <nav class  ="menu">                
                 <a href="ubicacion.html">Ubicación</a>
                 <a href="poblacion.html">Población</a>
@@ -22,9 +25,12 @@
                 <a href="historia.html">Historia</a>
                 <a href="referencias.html">Referencias</a>
                 </nav>     
+                <!-- -------------x--------- Menu - --------------x------------------- -->
         </div>  
 	</header>
-    
+    <!-- ------------x----------------  Cabecera --------------------------x------------------- -->
+
+    <!-- -----------------------------  Banner ------------------------------------------------ -->
     <div id="banner">
         <section class="referencias">
             <div class="contenedor">
@@ -32,7 +38,10 @@
             </div>    
         </section>
     </div>
-        
+    <!-- ------------x----------------  Banner ----------------------------x------------------- -->
+
+    <!-- -------------------------------------------  MAIN ------------------------------------------------------ --> 
+    <!-- ---------------------------- Introducción   ------------------------------------------ -->     
     <section class="sec2">        
         <div class="sec2b">
             <h1><span>Agradecimientos</span></h1>
@@ -42,8 +51,14 @@
                 mapa de navegación.
             </p>
             <br>
+            <img src="imagenes/mapa.PNG">
         </div>
     </section>
+    <!-- ------------x---------------  Introducción ------------------------x------------------- -->
+    <!-- ---------------------------- Mapa de Navegación   ------------------------------------- -->
+    <!-- ------------x--------------- Mapa de Navegación   -----------------x------------------- --> 
+    <!-- ----------------------------  Sección Intermedia -------------------------------------- -->
+    <!-- -------------------------------------  Home  ------------------------------------------ -->
     <div class="contenedor2 ref">
         <div class="descripcion a">
             <h3>Home</h3>
@@ -78,9 +93,14 @@
                 </li>
                 <li><a href="https://erasmusu.com/es/erasmus-toulouse/experiencias-erasmus/experiencia-erasmus-en-toulouse-francia-de-david-192101" class="ref" target="_blank">Erasmusu</a>
                 </li>
+                <li><a href="https://www.flixbus.es/autobuses/toulouse" class="ref" target="_blank">Flibux</a>
+                </li>
+                <li><a href="https://wallpaperaccess.com/toulouse" class="ref" target="_blank">Wallpapers</a>
+                </li>
             </ul>
         </div>
     </div>
+    <!-- ---------------------------------  Ubicación  ----------------------------------------- -->
     <div class="contenedor2 ref b">
         <div class="descripcion info">
             <h2>Imágenes</h2>
@@ -112,6 +132,7 @@
             <h3>Ubicación</h3>
         </div>
     </div>
+    <!-- ---------------------------------  Población  ----------------------------------------- -->
     <div class="contenedor2 ref">
         <div class="descripcion a">
             <h3>Población</h3>
@@ -139,6 +160,7 @@
             </ul>
         </div>
     </div>
+    <!-- -------------------------------  Actividades  ----------------------------------------- -->
     <div class="contenedor2 ref b">        
         <div class="descripcion info">
             <h2>Imágenes</h2>
@@ -181,6 +203,7 @@
             <h3>Actividades</h3>            
         </div>
     </div>
+    <!-- ---------------------------------  Historia  ------------------------------------------ -->
     <div class="contenedor2 ref">
         <div class="descripcion a">
             <h3>Historia</h3>
@@ -217,13 +240,18 @@
                 </li>    
             </ul>
         </div>
-    </div>     
+    </div>
+    <!-- ------------x---------------  Sección Intermedia ------------------x------------------- -->
+    <!-- ----------------------------  Banner final -------------------------------------------- -->     
     <section class="sec5" style="background-image: url(imagenes/referencias.jpg)"></section>
+    <!-- ------------x---------------  Banner final ------------------------x------------------- -->
+    <!-- ------------x------------------------------  MAIN ------------------------------x----------------------- --> 
+
     <!-- ----------------------------  PIE DE PÁGINA ------------------------------------------- -->
     <div class="footer">
         <p>&copy Esteban Sierra, 2020</p>
     </div>
-    <!-- ------------x---------------  PIE DE PÁGINA ------------------------x------------------- -->
-    
+    <!-- ------------x---------------  PIE DE PÁGINA ------------------------x------------------- -->  
 </body>
+<!-- ------------x---------------  PAGINA --------------------------x------------------- -->
 </html>   
